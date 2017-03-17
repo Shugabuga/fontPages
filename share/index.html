@@ -1,0 +1,8 @@
+<script>
+var fontName = window.location.href.split("#")[1];
+base64 = window.location.href.split("#")[2];
+
+var xmlString = '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict><key>ConsentText</key><dict><key>default</key><string>This profie will install the font "' + fontName + '" onto your device. To use the font, use an app like Pages. You can uninstall the font by removing this profile.</string></dict><key>PayloadContent</key><array><dict><key>Font</key><data>' + base64 +'</data><key>Name</key><string>' + fontName + '</string><key>PayloadDescription</key><string>Configures Font settings</string><key>PayloadDisplayName</key><string>Fonts</string><key>PayloadIdentifier</key><string>com.apple.font.CA9DD3A4-DA14-4D5A-84F8-0E90BC4360D2</string><key>PayloadType</key><string>com.apple.font</string><key>PayloadUUID</key><string>4A79228B-717E-44B0-8F53-9EF64F4C18A0</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string>Installs the font "' + fontName + '" onto your device.</string><key>PayloadDisplayName</key><string>Font - ' + fontName + '</string><key>PayloadIdentifier</key><string>heyitsshuga.FontPages.' + fontName + '</string><key>PayloadOrganization</key><string>FontPages by HeyItsShuga</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>CCA9B4E7-7E4B-4AF6-9EDC-478B6FE7B065</string><key>PayloadVersion</key><integer>1</integer></dict></plist>'
+var encodedXml = window.btoa(xmlString)
+window.location = 'data:application/x-apple-aspen-config;base64,' + encodedXml
+</script>
