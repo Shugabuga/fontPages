@@ -1,0 +1,6 @@
+#chartdiv {
+  width: 100%;
+  height: 200px;
+}
+a[href|='http://www.amcharts.com/javascript-maps/'] {display:none!important}
+g[transform|='translate(10,10)'] {display:none!important}
