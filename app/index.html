@@ -56,7 +56,7 @@
             <div id="tab1" class="view tab active">
               <div style="background:#347BFA;color:white" class="navbar">
                 <div class="navbar-inner">
-                  <div class="center">Install Font</div>
+                  <div id="installFontGroupString" class="center">Install Font</div>
                 </div>
               </div>
               <div class="pages navbar-fixed">
@@ -113,7 +113,7 @@
             <div id="tab2" class="view tab">
               <div style="background:#347BFA;color:white" class="navbar">
                 <div class="navbar-inner">
-                  <div class="center">Featured Fonts</div>
+                  <div id="featuredFontsGroupString" class="center">Featured Fonts</div>
                 </div>
               </div>
               <div class="pages navbar-fixed">
@@ -133,29 +133,29 @@
                         </div>
                     </div> -->
 
-                    <div id="featuredFontGroupString" class="content-block-title">Serif</div>
+                    <div id="serifFeaturedString" class="content-block-title">Serif</div>
                     <div class="swiper-container swiper-1">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><span><p class="breeserif">Bree Serif</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/breeserif.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
+                          <div class="swiper-slide"><span><p class="sketchserif">Sketch Serif</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/sketchserif.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
                         </div>
                     </div>
 
-                    <div id="featuredFontGroupString" class="content-block-title">Sans Serif</div>
+                    <div id="sansSerifFeaturedString" class="content-block-title">Sans Serif</div>
                     <div class="swiper-container swiper-1">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><span><p class="ptsanscaption">PT Sans Caption</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/ptsanscaption.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
-
+                          <div class="swiper-slide"><span><p class="comicneue">Comic Neue</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/comicneue.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
                         </div>
                     </div>
 
-                    <div id="featuredFontGroupString" class="content-block-title">Decorative</div>
+                    <div id="decorativeFeaturedString" class="content-block-title">Decorative</div>
                     <div class="swiper-container swiper-1">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><span><p class="crewniverse">Crewniverse</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/crewniverse.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
-                          <div class="swiper-slide"><span><p class="comicneue">Comic Neue</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/comicneue.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
                           <div class="swiper-slide"><span><p class="americancaptain">American Captain</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/americancaptain.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
                           <div class="swiper-slide"><span><p class="digital7">Digital-7</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/digital7.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
                           <div class="swiper-slide"><span><p class="hacked">HACKED</p><center><a onclick="window.location = 'https://fontpages.ga/fonts/hacked.mobileconfig'" style="width:100px" id="installBtnString" class="button installBtnString">Install</a></center></span></div>
@@ -171,7 +171,7 @@
             <div id="tab3" class="view tab">
               <div style="background:#347BFA;color:white" class="navbar">
                 <div class="navbar-inner">
-                  <div class="center">About</div>
+                  <div id="aboutGroupString" class="center">About</div>
                 </div>
               </div>
               <div class="pages navbar-fixed">
@@ -211,7 +211,7 @@
                               </text>
                           </svg></center>
                         <center><h1>fontPages</h1></center>
-                        <center><h3>Version 0.5.0 Beta</h3></center>
+                        <center><h3>1.0.0 <txt style="color:gold">Golden Master</txt></h3></center>
                               <ul>
                                 <li class="item-content">
                                   <div class="item-media"><i class="fa fa-legal" aria-hidden="true"></i></div>
@@ -293,5 +293,6 @@
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
   </body>
+  <script src="localize.js"></script>
   <script src="index.js"></script>
 </html>
