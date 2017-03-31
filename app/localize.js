@@ -45,7 +45,7 @@ if (lang==='es') {
   document.getElementById('serifFeaturedString').innerHTML = "Con Serifa"
   document.getElementById('sansSerifFeaturedString').innerHTML = "Sin Serifa"
   document.getElementById('decorativeFeaturedString').innerHTML = "Decorativo"
-  Dom7('a.installBtnString').text('Install Spanish');
+  Dom7('a.installBtnString').text('Instalar');
   // About
   document.getElementById('aboutGroupString').innerHTML = "Acerca de"
   document.getElementById('aboutLicenseString').innerHTML = "Licencia"
