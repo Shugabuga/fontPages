@@ -59,7 +59,7 @@
               <nav>
                 <ul class="nav masthead-nav">
                   <li class="active"><a href="https://fontpages.ga">Home</a></li>
-                  <li><a onclick="alert('fontPages is coming soon!')" href="#">Get Started</a></li>
+                  <li><a id="start" style="display:none" href="app/index.html">Get Started</a></li>
                   <li><a href="https://github.com/Shugabuga/FontPages">GitHub</a></li>
                 </ul>
               </nav>
@@ -68,36 +68,8 @@
 <div style="height:10vh;"></div>
           <div class="inner cover">
             <h1 class="cover-heading">
-              <!-- <svg width="20vw" height="20vw" viewBox="291 159 518 518" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <radialGradient cx="50%" cy="2.21022003%" fx="50%" fy="2.21022003%" r="97.78978%" id="radialGradient-1">
-                                            <stop stop-color="#00B6CE" offset="0%"></stop>
-                                            <stop stop-color="#347BFA" offset="100%"></stop>
-                                        </radialGradient>
-                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
-                                            <stop stop-color="#FEFEFE" offset="0%"></stop>
-                                            <stop stop-color="#CCCCCC" offset="100%"></stop>
-                                        </linearGradient>
-                                        <circle id="path-3" cx="550" cy="416" r="244"></circle>
-                                        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
-                                            <feMorphology radius="9" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-                                            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-                                            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-                                            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
-                                            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-                                        </filter>
-
-                                    <g id="Oval" stroke="none" fill="none">
-                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
-                                        <use stroke="url(#linearGradient-2)" stroke-width="17" fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
-                                    </g>
-                                    <polygon id="Rectangle" stroke="#268BEE" stroke-width="3.6" fill="#FFFFFF" fill-rule="evenodd" transform="translate(550.000000, 474.140656) rotate(-315.000000) translate(-550.000000, -474.140656) " points="513.766075 437.906731 679.5 344.640656 620.148861 544.289518 420.5 603.640656"></polygon>
-                                    <polygon id="Rectangle-Copy" stroke="#238EEB" stroke-width="3.6" fill="#FFFFFF" fill-rule="evenodd" transform="translate(550.000000, 439.140656) rotate(-315.000000) translate(-550.000000, -439.140656) " points="513.766075 402.906731 679.5 309.640656 620.148861 509.289518 420.5 568.640656"></polygon>
-                                    <polygon id="Rectangle-Copy-2" stroke="#2091E9" stroke-width="3.6" fill="#FFFFFF" fill-rule="evenodd" transform="translate(550.000000, 403.140656) rotate(-315.000000) translate(-550.000000, -403.140656) " points="513.766075 366.906731 679.5 273.640656 620.148861 473.289518 420.5 532.640656"></polygon>
-                                    <text id="Abc" stroke="#179BE1" stroke-width="1.2" fill="none" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="120" font-weight="normal">
-                                        <tspan x="434.859344" y="419" fill="#FFFFFF">Abc</tspan>
-                                    </text>
-                                </svg> -->
-                    <img style="height:70vh" src="landing/phone.png"></img>
+              <center id="weneta">Prepare For Landing.</center>
+              <img id="phonePic" style="height:70vh;display:none" src="landing/phone.png"></img>
             </h1>
             <p class="lead">Install Custom Fonts On iOS</p>
             <p class="lead">
@@ -127,7 +99,24 @@
     <script src="landing/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="landing/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="landing/countdown.min.js"></script>
     <script>
+    function timer() {
+      var weneta = document.getElementById('weneta')
+      var etason = countdown( new Date(2017, 3, 1, 12, 00) )
+      weneta.innerHTML = etason.toString()
+      if(etason.value > 0) {
+        document.getElementById('phonePic').style = "height:70vh;display:inline"
+        document.getElementById('phonePic').style.display = "inline"
+        document.getElementById('weneta').style = "display:none"
+        document.getElementById('weneta').style.display = "none"
+        document.getElementById('start').style = "display:inline"
+        document.getElementById('start').style.display = "inline"
+      }
+    }
+    setInterval(function(){timer()}, 1000);
+    timer()
+
     </script>
   </body>
 </html>

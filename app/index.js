@@ -1,5 +1,3 @@
-
-
 var handleFileSelect = function(evt) {
     var files = evt.target.files;
     var file = files[0];
