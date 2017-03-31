@@ -142,6 +142,10 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
     font-family: 'breeserif';
     src: url('https://fontpages.ga/fonts/breeserif.ttf');
 }
+@font-face {
+    font-family: 'sketchserif';
+    src: url('https://fontpages.ga/fonts/sketchserif.ttf');
+}
 .crewniverse {
   font-family: 'Crewniverse', sans-serif;
 }
