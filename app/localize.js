@@ -34,9 +34,9 @@ if (lang==='es') {
   // Install Font
   document.getElementById('installFontGroupString').innerHTML = "Install Font Spanish"
   document.getElementById('fontPreviewString').innerHTML = "Font Preview Spanish"
-  document.getElementById('defaultPreviewString').innerHTML = "The quick brown fox jumped over the lazy dogs. Spanish"
+  document.getElementById('fontPreview').innerHTML = "The quick brown fox jumped over the lazy dogs. Spanish"
   document.getElementById('fontNicknameString').innerHTML = "Font Nickname Spanish"
-  document.getElementById('fontNicknamePlaceholderString').placeholder = "Font Nickname (for profile)... Spanish"
+  document.getElementById('fontName').placeholder = "Font Nickname (for profile)... Spanish"
   document.getElementById('fontFileString').innerHTML = "Font File Spanish"
   document.getElementById('installFontString').innerHTML = "Install Font Spanish"
   // "Choose File" button is currently untranslatable.
