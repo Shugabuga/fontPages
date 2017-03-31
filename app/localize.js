@@ -20,42 +20,42 @@ if (lang==='en') {
 if (lang==='es') {
   console.log('System language detected as Spanish.')
   // Tips
-  document.getElementById('tipString').innerHTML = "Tip! Spanish"
-  if (tipID === 1) {tip.innerHTML = "We recommend using the Dropbox app to download and select font files (TTF or OTF). Spanish"}
-  if (tipID === 2) {tip.innerHTML = "Installed fonts can be used in apps like Pages, Keynote, and even Microsoft Word! Spanish"}
-  if (tipID === 3) {tip.innerHTML = "Looking for fonts? Sites like <a href='https://dafont.com'>daFont</a> and <a href='https://google.com/fonts'>Google Fonts</a> has tons! Spanish"}
-  if (tipID === 4) {tip.innerHTML = "fontPages can be used with and without a jailbreak! Spanish"}
-  if (tipID === 5) {tip.innerHTML = "You can have as many fonts as you like installed at once! Spanish"}
-  if (tipID === 6) {tip.innerHTML = "fontPages does <b>not</b> change the system font, but adds new ones. Think Font Book from macOS. Spanish"}
-  if (tipID === 7) {tip.innerHTML = "fontPages supports TTF and OTF fonts. WOFF2 or SVG fonts aren't supported. Spanish"}
-  if (tipID === 8) {tip.innerHTML = "fontPages is free to use and will always be! Spanish"}
-  if (tipID === 9) {tip.innerHTML = "Don't have a font in mind? Check out our Top Fonts section! Spanish"}
-  if (tipID === 10) {tip.innerHTML = "All profiles from fontPages are completely safe. It only includes your font of choice. Spanish"}
+  document.getElementById('tipString').innerHTML = "Tip!"
+  if (tipID === 1) {tip.innerHTML = "Te recomendamos utilizar la app Dropbox para descargar y seleccionar archivos de fuente (OTF ó TTF)."}
+  if (tipID === 2) {tip.innerHTML = "Puedes utilizar las fuentes instaladas en apps como Pages, ó Keynote. Incluso Microsoft Word!"}
+  if (tipID === 3) {tip.innerHTML = "Buscando fuentes? Puedes encontrarlas en sitios como <a href='https://dafont.com'>daFont</a> y <a href='https://google.com/fonts'>Google Fonts</a>"}
+  if (tipID === 4) {tip.innerHTML = "Puedes utilizar fontPages sin Jailbreak!"}
+  if (tipID === 5) {tip.innerHTML = "Puedes instalar cuantas fuentes como quieras!"}
+  if (tipID === 6) {tip.innerHTML = "fontPages <b>no</b> cambia la fuente del sistema, solo añande nuevas, como Font Book en macOS"}
+  if (tipID === 7) {tip.innerHTML = "fontPages soporta fuentes TTF y OTF. Las fuentes WOFF2 y SVG no son soportadas"}
+  if (tipID === 8) {tip.innerHTML = "fontPages es gratis y siempre lo será!"}
+  if (tipID === 9) {tip.innerHTML = "No se te ocurre que fuente instalar? Checa la sección Top Fuentes"}
+  if (tipID === 10) {tip.innerHTML = "Los perfiles de fontPages son completamente seguros. Solamente incluyen tu fuente elegida."}
   // Install Font
-  document.getElementById('installFontGroupString').innerHTML = "Install Font Spanish"
-  document.getElementById('fontPreviewString').innerHTML = "Font Preview Spanish"
-  document.getElementById('fontPreview').innerHTML = "The quick brown fox jumped over the lazy dogs. Spanish"
-  document.getElementById('fontNicknameString').innerHTML = "Font Nickname Spanish"
-  document.getElementById('fontName').placeholder = "Font Nickname (for profile)... Spanish"
-  document.getElementById('fontFileString').innerHTML = "Font File Spanish"
-  document.getElementById('installFontString').innerHTML = "Install Font Spanish"
+  document.getElementById('installFontGroupString').innerHTML = "Instalar Fuente"
+  document.getElementById('fontPreviewString').innerHTML = "Previsualización"
+  document.getElementById('fontPreview').innerHTML = "El veloz murciélago hindú comía feliz cardillo y kiwi."
+  document.getElementById('fontNicknameString').innerHTML = "Apodo"
+  document.getElementById('fontName').placeholder = "Apodo (para el perfil)..."
+  document.getElementById('fontFileString').innerHTML = "Archivo de Fuente"
+  document.getElementById('installFontString').innerHTML = "Instalar Fuente"
   // "Choose File" button is currently untranslatable.
   // Featured Fonts
-  document.getElementById('featuredFontsGroupString').innerHTML = "Featured Fonts Spanish"
-  document.getElementById('serifFeaturedString').innerHTML = "Serif Spanish"
-  document.getElementById('sansSerifFeaturedString').innerHTML = "Sans Serif Spanish"
-  document.getElementById('decorativeFeaturedString').innerHTML = "Decorative Spanish"
+  document.getElementById('featuredFontsGroupString').innerHTML = "Descubrir Fuentes"
+  document.getElementById('serifFeaturedString').innerHTML = "Con Serifa"
+  document.getElementById('sansSerifFeaturedString').innerHTML = "Sin Serifa"
+  document.getElementById('decorativeFeaturedString').innerHTML = "Decorativo"
   Dom7('a.installBtnString').text('Install Spanish');
   // About
-  document.getElementById('aboutGroupString').innerHTML = "About Spanish"
-  document.getElementById('aboutLicenseString').innerHTML = "License Spanish"
-  document.getElementById('aboutCodeString').innerHTML = "Source Code Spanish"
-  document.getElementById('aboutWebAppString').innerHTML = "Web App Spanish"
-  document.getElementById('aboutWebUIString').innerHTML = "Web App UI Spanish"
-  document.getElementById('aboutNativeAppString').innerHTML = "Native App Spanish"
-  document.getElementById('aboutContributionFixedNavbarString').innerHTML = "Contribution: Fixed Navbar Spanish"
-  document.getElementById('aboutContributionOpenLinksString').innerHTML = "License Spanish"
-  document.getElementById('aboutLicenseString').innerHTML = "Contribution: Open Links in Safari Spanish"
-  document.getElementById('aboutBetaTesters').innerHTML = "Beta Testers Spanish"
-  document.getElementById('backButtonString').innerHTML = "Back Spanish"
+  document.getElementById('aboutGroupString').innerHTML = "Acerca de"
+  document.getElementById('aboutLicenseString').innerHTML = "Licencia"
+  document.getElementById('aboutCodeString').innerHTML = "Código Fuente"
+  document.getElementById('aboutWebAppString').innerHTML = "Web App"
+  document.getElementById('aboutWebUIString').innerHTML = "UI Web App"
+  document.getElementById('aboutNativeAppString').innerHTML = "Aplicación"
+  document.getElementById('aboutContributionFixedNavbarString').innerHTML = "Contribución: Navbar Arreglada"
+  document.getElementById('aboutContributionOpenLinksString').innerHTML = "Licencia"
+  document.getElementById('aboutLicenseString').innerHTML = "Contribución: Abrir Links en Safari"
+  document.getElementById('aboutBetaTesters').innerHTML = "Miembros Beta"
+  document.getElementById('backButtonString').innerHTML = "Atrás"
   }
