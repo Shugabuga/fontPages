@@ -122,3 +122,12 @@ document.getElementById("safari7").addEventListener("click", function(evt) {
     dispatch.initEvent("click", true, true);
     a.dispatchEvent(dispatch);
 }, false);
+document.getElementById("safari8").addEventListener("click", function(evt) {
+    var a = document.createElement('a');
+    a.setAttribute("href", this.getAttribute("data-href"));
+    a.setAttribute("target", "_blank");
+
+    var dispatch = document.createEvent("HTMLEvents");
+    dispatch.initEvent("click", true, true);
+    a.dispatchEvent(dispatch);
+}, false);
