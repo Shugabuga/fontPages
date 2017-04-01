@@ -68,7 +68,6 @@
 <div style="height:10vh;"></div>
           <div class="inner cover">
             <h1 class="cover-heading">
-              <center id="weneta">Prepare For Landing.</center>
               <img id="phonePic" style="height:70vh;display:none" src="landing/phone.png"></img>
             </h1>
             <p class="lead">Install Custom Fonts On iOS</p>
@@ -101,22 +100,6 @@
     <script src="landing/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="landing/countdown.min.js"></script>
     <script>
-    function timer() {
-      var weneta = document.getElementById('weneta')
-      var etason = countdown( new Date(2017, 3, 1, 12, 00) )
-      weneta.innerHTML = etason.toString()
-      if(etason.value > 0) {
-        document.getElementById('phonePic').style = "height:70vh;display:inline"
-        document.getElementById('phonePic').style.display = "inline"
-        document.getElementById('weneta').style = "display:none"
-        document.getElementById('weneta').style.display = "none"
-        document.getElementById('start').style = "display:inline"
-        document.getElementById('start').style.display = "inline"
-      }
-    }
-    setInterval(function(){timer()}, 1000);
-    timer()
-
     </script>
   </body>
 </html>

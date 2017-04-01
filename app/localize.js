@@ -37,9 +37,8 @@ if (lang==='es') {
   document.getElementById('fontPreview').innerHTML = "El veloz murciélago hindú comía feliz cardillo y kiwi."
   document.getElementById('fontNicknameString').innerHTML = "Apodo"
   document.getElementById('fontName').placeholder = "Apodo (para el perfil)..."
-  document.getElementById('fontFileString').innerHTML = "Archivo de Fuente"
+  document.getElementById('fontFileString').innerHTML = "Archivo"
   document.getElementById('installFontString').innerHTML = "Instalar Fuente"
-  // "Choose File" button is currently untranslatable.
   // Featured Fonts
   document.getElementById('featuredFontsGroupString').innerHTML = "Descubrir Fuentes"
   document.getElementById('serifFeaturedString').innerHTML = "Con Serifa"
@@ -58,4 +57,8 @@ if (lang==='es') {
   document.getElementById('aboutLicenseString').innerHTML = "Contribución: Abrir Links en Safari"
   document.getElementById('aboutBetaTesters').innerHTML = "Miembros Beta"
   document.getElementById('backButtonString').innerHTML = "Atrás"
+  // Navbar
+  document.getElementById('installLabel').innerHTML = "Instalar"
+  document.getElementById('featuredLabel').innerHTML = "Popular"
+  document.getElementById('aboutLabel').innerHTML = "Acerca de"
   }
