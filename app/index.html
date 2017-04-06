@@ -19,16 +19,7 @@
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
     <!-- Try to prevent scrolling -->
-    <script>
-        function pdcb(e) {
-            e.preventDefault();
-        }
-        function npcb(e) {
-            e.stopPropagation();
-        }
-        $(document).on('touchstart touchmove', pdcb).
-                    on('touchstart touchmove', '.scrollable', npcb);
-    </script>
+
   </head>
   <body>
     <style id="previewCSS"></style>
@@ -228,7 +219,7 @@
                               </text>
                           </svg></center>
                         <center><h1>fontPages</h1></center>
-                        <center><h3>1.1.0</h3></center>
+                        <center><h3>1.1.1</h3></center>
                               <ul>
                                 <li class="item-content">
                                   <div class="item-media"><i class="fa fa-legal" aria-hidden="true"></i></div>
@@ -351,6 +342,8 @@
         </div>
       </div>
     </div>
+    <!-- Prevent overscroll -->
+    <script type="text/javascript" src="js/inobounce.min.js"></script>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="dist/js/framework7.min.js"></script>
     <!-- Path to your app js-->
@@ -358,6 +351,13 @@
   </body>
   <script src="localize.js"></script>
   <script src="index.js"></script>
+  <style>
+  .views {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  </style>
   <script>
   myApp.showTab('#tab1', 'false')
   </script>
