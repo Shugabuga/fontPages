@@ -18,9 +18,19 @@
     <link rel="stylesheet" href="dist/css/framework7.ios.colors.min.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
+    <!-- Try to prevent scrolling -->
+    <script>
+        function pdcb(e) {
+            e.preventDefault();
+        }
+        function npcb(e) {
+            e.stopPropagation();
+        }
+        $(document).on('touchstart touchmove', pdcb).
+                    on('touchstart touchmove', '.scrollable', npcb);
+    </script>
   </head>
   <body>
-    <div></div>
     <style id="previewCSS"></style>
     <div id="base64" style="display:none">[DEBUG] Awaiting file...</div>
     <div id="shortLink" style="display:none">[DEBUG] Awaiting shortlink...</div>
@@ -52,7 +62,7 @@
           <!-- Tabs, now tabs wrapper is "views" -->
           <div class="views tabs toolbar-fixed">
             <!-- Tab 1 - View 1, active by default -->
-            <div id="tab1" class="view tab active">
+            <div id="tab1" class="view tab active scrollable">
               <div style="background:#347BFA;color:white" class="navbar">
                 <div class="navbar-inner">
                   <div id="installFontGroupString" class="center">Install Font</div>
@@ -109,7 +119,7 @@
               </div>
             </div>
             <!-- Tab 2 - View 2 -->
-            <div id="tab2" class="view tab">
+            <div id="tab2" class="view tab scrollable">
               <div style="background:#347BFA;color:white" class="navbar">
                 <div class="navbar-inner">
                   <div id="featuredFontsGroupString" class="center">Featured Fonts</div>
@@ -167,7 +177,7 @@
               </div>
             </div>
             <!-- Tab 2 - View 3 -->
-            <div id="tab3" class="view tab">
+            <div id="tab3" class="view tab scrollable">
               <div style="background:#347BFA;color:white" class="navbar">
                 <div class="navbar-inner">
                   <div id="aboutGroupString" class="center">About</div>
@@ -210,7 +220,7 @@
                               </text>
                           </svg></center>
                         <center><h1>fontPages</h1></center>
-                        <center><h3>1.0.2</h3></center>
+                        <center><h3>1.1.0</h3></center>
                               <ul>
                                 <li class="item-content">
                                   <div class="item-media"><i class="fa fa-legal" aria-hidden="true"></i></div>
