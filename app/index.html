@@ -61,8 +61,16 @@
           <!-- Index Page w/ tabs -->
           <!-- Tabs, now tabs wrapper is "views" -->
           <div class="views tabs toolbar-fixed">
+            <div style="display:none" id="debug">
+              <center><h1>Something went wrong!</h1>
+                <h3>fontPages was unable to load<br>
+                  This is likely due to a poor Internet connection or JavaScript being disabled in Settings.<br>
+                  Please make sure JavaScript is enabled and then reload the app.
+                </h3>
+              </center>
+            </div>
             <!-- Tab 1 - View 1, active by default -->
-            <div id="tab1" class="view tab active scrollable">
+            <div id="tab1" class="view tab scrollable">
               <div style="background:#347BFA;color:white" class="navbar">
                 <div class="navbar-inner">
                   <div id="installFontGroupString" class="center">Install Font</div>
@@ -285,9 +293,48 @@
                                   <div class="card-content-inner">Jamie Bishop, @iOSResearchr, ./iTrickz, @ponelogic, @The_Apple_Nerd, Ayman, DirilişErtugrul, Gabe, Caleb Gonzalez, @MachenBailey, @SamueleMancardi, and @GoogleD3V</div>
                                 </div>
                               </div>
+                              <div class="list-block">
+                                <ul>
+                                  <li class="item-content">
+                                    <div class="item-media"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+                                    <div class="item-inner">
+                                      <a href="https://fontpages.ga/app/index.html" id="installFontString" onclick="window.location.reload()" class="item-link list-button">Reload</a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
                       </div>
                     </div>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Debug tab. Hidden unless needed. -->
+            <div id="tab4" class="view tab active scrollable">
+              <div style="background:#347BFA;color:white" class="navbar">
+                <div class="navbar-inner">
+                  <div id="aboutGroupString" class="center">Error</div>
+                </div>
+              </div>
+              <div class="pages navbar-fixed">
+                <div data-page="home-3" class="page">
+                  <div class="page-content">
+                      <div class="content-block">
+                        It seems that fontPages was not able to load properly. This usually means that your browser was not able to load fontPages completely, but also could be because of a critical bug on our end, or that you have disabled JavaScript.
+                        <br>Please confirm that JavaScript is enabled in Settings, then reload fontPages. If this doesn't work, contact <a onclick="window.location='https://twitter.com/HeyItsShuga'" href="https://twitter.com/HeyItsShuga">HeyItsShuga</a> so we can investigate.
+                        <br>
+                      </div>
+                      <div class="list-block">
+                        <ul>
+                          <li class="item-content">
+                            <div class="item-media"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+                            <div class="item-inner">
+                              <a href="https://fontpages.ga/app/index.html" id="installFontString" onclick="window.location.reload()" class="item-link list-button">Reload</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -311,4 +358,7 @@
   </body>
   <script src="localize.js"></script>
   <script src="index.js"></script>
+  <script>
+  myApp.showTab('#tab1', 'false')
+  </script>
 </html>
