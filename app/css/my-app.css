@@ -116,35 +116,35 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
 /* Featured Fonts */
 @font-face {
     font-family: 'Crewniverse';
-    src: url('https://fontpages.ga/fonts/crewniverse.ttf');
+    src: url('https://fontpages.shuga.co/fonts/crewniverse.ttf');
 }
 @font-face {
     font-family: 'PT Sans Caption';
-    src: url('https://fontpages.ga/fonts/ptsanscaption.ttf');
+    src: url('https://fontpages.shuga.co/fonts/ptsanscaption.ttf');
 }
 @font-face {
     font-family: 'Comic Neue';
-    src: url('https://fontpages.ga/fonts/comicneue.ttf');
+    src: url('https://fontpages.shuga.co/fonts/comicneue.ttf');
 }
 @font-face {
     font-family: 'American Captain';
-    src: url('https://fontpages.ga/fonts/americancaptain.ttf');
+    src: url('https://fontpages.shuga.co/fonts/americancaptain.ttf');
 }
 @font-face {
     font-family: 'digital7';
-    src: url('https://fontpages.ga/fonts/digital7.ttf');
+    src: url('https://fontpages.shuga.co/fonts/digital7.ttf');
 }
 @font-face {
     font-family: 'hacked';
-    src: url('https://fontpages.ga/fonts/hacked.ttf');
+    src: url('https://fontpages.shuga.co/fonts/hacked.ttf');
 }
 @font-face {
     font-family: 'breeserif';
-    src: url('https://fontpages.ga/fonts/breeserif.ttf');
+    src: url('https://fontpages.shuga.co/fonts/breeserif.ttf');
 }
 @font-face {
     font-family: 'sketchserif';
-    src: url('https://fontpages.ga/fonts/sketchserif.ttf');
+    src: url('https://fontpages.shuga.co/fonts/sketchserif.ttf');
 }
 .crewniverse {
   font-family: 'Crewniverse', sans-serif;
